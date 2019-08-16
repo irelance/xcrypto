@@ -1,7 +1,7 @@
 package rsa
 
 import (
-	".."
+	"github.com/irelance/xcrypto"
 	"bytes"
 	"crypto"
 	"crypto/rand"
