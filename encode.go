@@ -17,9 +17,9 @@ type Cipher struct {
 	encodeType EncodeType
 }
 
-func (r *Cipher) SetEncodeType(encodeType EncodeType) *Cipher {
-	r.encodeType = encodeType
-	return r
+func (c *Cipher) SetEncodeType(encodeType EncodeType) *Cipher {
+	c.encodeType = encodeType
+	return c
 }
 
 func (c *Cipher) EncodeData(encrypt []byte) []byte {

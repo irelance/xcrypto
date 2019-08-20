@@ -176,9 +176,9 @@ func NewCipher(publicKey []byte, privateKey []byte) (c *Cipher, err error) {
 	return c, nil
 }
 
-func (r *Cipher) SetVSignType(signType crypto.Hash) *Cipher {
-	r.signType = signType
-	return r
+func (c *Cipher) SetSignType(signType crypto.Hash) *Cipher {
+	c.signType = signType
+	return c
 }
 
 func (c *Cipher) PublicEncrypt(data string) ([]byte, error) {
